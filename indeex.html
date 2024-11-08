@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+      padding: 10px;
+    }
+
+    .fruit-card {
+      max-width: 400px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .fruit-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .fruit-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .fruit-card h2 {
+      font-size: 1.5rem;
+      margin: 15px 0;
+      color: #333;
+    }
+
+    .fruit-details p, .fruit-nutrition p, .fruit-advantages p {
+      margin: 5px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .fruit-advantages, .fruit-nutrition {
+      margin-top: 20px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    /* Mobile styling */
+    @media (max-width: 600px) {
+      .fruit-card {
+        padding: 15px;
+      }
+      
+      .fruit-card h2 {
+        font-size: 1.25rem;
+      }
+      
+      .fruit-details p, .fruit-nutrition p, .fruit-advantages p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fruit-card">
+    <img src="apple.jpg" alt="Apple">
+    <h2>Apple</h2>
+    <div class="fruit-details">
+      <p><strong>Color:</strong> Red</p>
+      <p><strong>Taste:</strong> Sweet and slightly tart</p>
+      <p><strong>Origin:</strong> Central Asia</p>
+    </div>
+    
+   
+    
+    <div class="fruit-nutrition">
+      <p class="section-title">Nutrition:</p>
+      <p>Calories: 52 per 100g</p>
+      <p>Vitamin C: 14% of Daily Value</p>
+      <p>Fiber: 2.4g</p>
+      <p>Vitamins: A, B1, B2, B6, E, and K</p>
+    </div>
+  </div>
+
+</body>
+</html>
